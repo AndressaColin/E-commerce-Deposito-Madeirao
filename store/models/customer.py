@@ -11,7 +11,7 @@ class Customer(models.Model):
     # Save customer
     def register(self):
         # If you want hashed password:
-        # self.password = make_password(self.password)
+        self.password = make_password(self.password)
         self.save()
 
     @staticmethod
@@ -26,3 +26,4 @@ class Customer(models.Model):
 
     class Meta:
         verbose_name_plural = "Customers"
+
