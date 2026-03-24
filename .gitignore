@@ -3,3 +3,4 @@ __pycache__/
 *.py[cod]
 db.sqlite3db.sqlite3
 __pycache__/
+db.sqlite3
